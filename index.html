@@ -14,34 +14,34 @@
                     <input type="text" name="dispaly">
                 </div>
                 <div>
-                    <input type="button" value="AC">
-                    <input type="button" value="DE">
-                    <input type="button" value=".">
-                    <input type="button" value="/">
+                    <input type="button" value="AC" onclick="dispaly.value = ''">
+                    <input type="button" value="DE" onclick="dispaly.value = dispaly.value.toString().slice(0,-1)" >
+                    <input type="button" value="." onclick="dispaly.value += '.'">
+                    <input type="button" value="/" onclick="dispaly.value += '/'">
                 </div>
                 <div>
                     <input type="button" value="7" onclick="dispaly.value += '7'">
-                    <input type="button" value="8">
-                    <input type="button" value="9">
-                    <input type="button" value="*">
+                    <input type="button" value="8" onclick="dispaly.value += '8'">
+                    <input type="button" value="9" onclick="dispaly.value += '9'">
+                    <input type="button" value="*" onclick="dispaly.value += '7'">
 
                 </div>
                 <div>
-                    <input type="button" value="4">
-                    <input type="button" value="5">
-                    <input type="button" value="6">
-                    <input type="button" value="-">
+                    <input type="button" value="4" onclick="dispaly.value += '4'">
+                    <input type="button" value="5" onclick="dispaly.value += '5'">
+                    <input type="button" value="6" onclick="dispaly.value += '6'">
+                    <input type="button" value="-" onclick="dispaly.value += '-'">
                 </div>
                 <div>
-                    <input type="button" value="1">
-                    <input type="button" value="2">
-                    <input type="button" value="3">
-                    <input type="button" value="+">
+                    <input type="button" value="1" onclick="dispaly.value += '1'">
+                    <input type="button" value="2" onclick="dispaly.value += '2'">
+                    <input type="button" value="3" onclick="dispaly.value += '3'">
+                    <input type="button" value="+" onclick="dispaly.value += '+'">
                 </div>
                 <div>
-                    <input type="button" value="00">
-                    <input type="button" value="0">
-                    <input type="button" value="=" class="equal">
+                    <input type="button" value="00" onclick="dispaly.value += '00'">
+                    <input type="button" value="0" onclick="dispaly.value += '0'">
+                    <input type="button" value="=" onclick="dispaly.value = eval(dispaly.value)" class="equal" >
                 </div>
             </form>
         </div>
