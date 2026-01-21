@@ -60,3 +60,7 @@ form input.equalto{
  
     color: #ff9500;
 }
+
+form input.operator{
+    color: aqua;
+}
